@@ -5,8 +5,6 @@ const path = require("path");
 const app = express();
 const morgan = require("morgan");
 
-
-
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -19,7 +17,7 @@ app.get("/health", (req, res) => {
 });
 
 // api routes
-// app.use("/api", require("./api"));
+app.use("/api", require("./api"));
 
 app.use((req, res, next) => {
   res.sendFile(path.join(__dirname, "./client/dist", "index.html"));
