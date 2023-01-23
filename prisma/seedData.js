@@ -1,10 +1,6 @@
-const tasks= [
-  { title: "This is the Titlle", description: "This is the Description" },
-  { title: "Titlle", description: "This is the Description" },
-  { title: "is the Titlle", description: "This is the Description" },
-  { title: "the Titlle", description: "This is the Description" },
-  { title: "Titlle", description: "This is the Description" },
-  { title: "Titlle", description: "This is the Description" },
+const tasks = [
+  { title: "Example #1", description: "This is first example" },
+  { title: "Example #2", description: "This is the second example" },
 ];
 
 module.exports = { tasks };

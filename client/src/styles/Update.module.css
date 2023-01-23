@@ -1,0 +1,39 @@
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: crimson;
+    border-radius: 30px;
+    height: 300px;
+    color: white;
+    text-align: center;
+    width: 400px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    justify-content: center;
+  }
+  
+  input{
+      margin-top: 20px;
+      height: 40px;
+  }
+  
+  .updateButton{
+      margin-top: 30px;
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      color: white;
+      background-color: black;
+      height: 30px;
+  
+  }
+  

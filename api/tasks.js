@@ -23,9 +23,9 @@ router.get(
   })
 );
 
-//POST/ api/tasks
+//POST/ api/tasks/create
 router.post(
-  "/",
+  "/create",
   asyncErrorHandler(async (req, res, next) => {
     const { title, description } = req.body;
     const createTask = await prisma.tasks.create({
@@ -37,7 +37,7 @@ router.post(
 
 //PATCH/ api/tasks/taskId
 router.patch(
-  "/:taskId",
+  "/updating/:taskId",
   asyncErrorHandler(async (req, res, next) => {
     const { title, description } = req.body;
     const updateTask = await prisma.tasks.update({
